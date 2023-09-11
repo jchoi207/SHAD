@@ -1,0 +1,145 @@
+body {
+  text-align: left !important;
+}
+
+/* Parallax_Victoria */
+.parallax {
+  background-image: url("img/victoria_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 1500px;
+  background-size: cover;
+  margin-top: -235px;
+  width: 100%;
+  transform: scaleY(0.9);
+}
+
+.parallax > a {
+  position: absolute;
+  right: 0px;
+  top: 1420px;
+  margin: 30px;
+}
+
+/* Title */
+.container > .header {
+  text-align: center;
+  font-size: 40px;
+  border: #000000 solid 10px;
+  border-radius: 10px;
+  box-shadow: 10px -5px 0px 0px #616161;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  max-width: 32%;
+  min-width: 600px;
+}
+
+/* Introduction */
+
+.container > .introduction {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  row-gap: 2em;
+  column-gap: 2em;
+  max-width: 900px;
+  min-width: 100px;
+}
+.container > .introduction > div {
+  z-index: 98;
+  background-color: #c2c2c2;
+  padding: 50px;
+  box-shadow: 10px -5px 0px 0px;
+}
+.container > .introduction > div:nth-child(even) {
+  box-shadow: -5px 10px 0px 0px;
+}
+.container > .introduction > div:nth-child(2) {
+  background-color: #e6e6e6;
+}
+.container > .introduction > div:nth-child(3) {
+  background-color: #e6e6e6;
+}
+.container > .introduction > div:nth-child(4) {
+  background-color: #c2c2c2;
+}
+@media (max-width: 800px) {
+  .container > .introduction {
+    display: block;
+    row-gap: 3em;
+  }
+}
+
+/* Start of 4 main grids */
+h2 {
+  text-decoration: underline #5d838d 4px;
+  position: relative;
+  color: #083846;
+  -webkit-transition: 1s;
+}
+
+.container > .card {
+  display: grid;
+  grid-template-columns: repeat(2, 50% 50%);
+  grid-gap: 2rem;
+  background: #f1f1f1;
+  margin-bottom: 5rem;
+  border-radius: 20px;
+  max-width: 1100px;
+  padding: 20px 50px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+
+  overflow: hidden;
+}
+.container > .card:nth-child(even) {
+  grid-template-columns: repeat(2, 50% 50%);
+  background: #f0efef;
+}
+.container > .card > img {
+  object-fit: cover; /* important part */
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  /* border: solid 10px #444; */
+  margin-right: auto;
+  margin-left: auto;
+  filter: grayscale(80%);
+  -webkit-transition: filter 0.8s;
+}
+.container > .card > img:hover {
+  filter: grayscale(0%);
+  transition: ease-in-out 0.3s;
+}
+
+.container > .card h3 {
+  margin-bottom: 2rem;
+}
+.container > .card > div {
+  padding: 1rem;
+}
+.container > .card:nth-child(even) img {
+  order: 2;
+}
+@media (max-width: 1075px) {
+  .container > .card {
+    display: block;
+    min-width: 900px;
+  }
+}
+/* when hovered, display content after */
+.menu a:hover::after {
+  color: #000000;
+  content: "test";
+  position: absolute; /* absolute based on the relativeness of parent */
+  padding: 10px;
+  background-color: gray;
+  opacity: 50%;
+  top: -50px;
+  right: 5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AquaDux</title>
+    <link rel="stylesheet" href="scientific_principles.css">
+    <link rel="stylesheet" href="universal_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="index_script.js"></script>
+</head>
+
+<body>
+
+    <div class="menu_alpha">
+        <nav>
+            <ul>
+                <a href="index.html">
+                    <li>Main Page</li>
+                </a>
+                <a href="research.html">
+                    <li>FAQs</li>
+                </a>
+                <a href="chemistry.html">
+                    <li>Scientific Principles</li>
+                </a>
+
+                <a href="about_us.html">
+                    <li>About us</li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menu_beta">
+        <nav>
+            <ul>
+                <li><a href="#spectrophotometry">Spectrophotometry</a></li>
+                <li><a href="#orbitals_quanta">Orbitals & Quanta</a></li>
+                <li><a href="#circuitry">Circuitry</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <main>
+        <section id="spectrophotometry">
+            <div class="spectrophotometry">
+                <h1>Spectrophotometry</h1>
+                <img src="img/Screen Shot 2021-07-19 at 2.10.58 PM.png">
+                <a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Kinetics/02%3A_Reaction_Rates/2.01%3A_Experimental_Determination_of_Kinetics/2.1.05%3A_Spectrophotometry"
+                    target="_blank">Credits</a>
+                <div>
+                    Spectrophotometry is a branch of chemistry focusing on how light interacts with aqueous solutions.
+                    This
+                    phenomenon is due to the existence of atomic/molecular orbitals of different energy levels, which
+                    attribute to discrete wavelengths of light. In our case, we can use this to measure the
+                    concentration of
+                    a given chemical substance in solution, knowing its absorbance wavelength. Concentration can be
+                    measured
+                    by comparing the intensity of the light before entering a solution to the intensity after it travels
+                    through solution:
+                    <br>
+                    <equation>\[A = \varepsilon lc:(1)\]</equation>
+                    <br>
+                    <div>Absorbance is also equal to the log of the ratio of the incident intensity over the transmitted
+                        intensity:
+                    </div>
+                    <br>
+                    <equation>\[A = \log(\frac{I_{o}}{I}):(2)\]</equation>
+                    <br>
+                    <div>
+                        Setting (1) and (2) equal, we receive (3)
+                    </div>
+                    <br>
+                    <equation>\[\log(\frac{I_{o}}{I}) = \varepsilon lc:(3)\]</equation>
+                    <br>
+                    <div>
+                        And finally, solving for concentration, we receive (4) where
+                    </div>
+                    <br>
+                    <equation>\[c=\frac{\log \frac{I_{o}}{I}}{\varepsilon l}:(4)\]
+                    </equation>
+                    <br>
+                    <div>
+                        Depending on the chemical substance scrutinized, a certain wavelength in the electromagnetic
+                        spectrum is favoured to be absorbed. So, when the specific light is provided to a chemical
+                        substance
+                        in solution, the transmitted intensity will differ from the incident. In general, the lower the
+                        intensity of the transmitted light, the higher the concentration since more light is absorbed,
+                        meaning that there is a larger quantity of particles per unit volume. Contrarily, the higher the
+                        intensity of transmitted light, the lower the concentration since less light is absorbed, which
+                        can be attributed to the fact that there are fewer particles per unit volume.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section id="orbitals_quanta">
+            <div class="orbitals_quanta">
+                <h1>Orbitals & Quanta</h1>
+                <img src="img/main-qimg-991a4783fc56f64d1ffa0dfd370ff031.png">
+                <a href="https://www.quora.com/What-exactly-is-happening-during-an-absorption-or-emission-of-say-a-photon-by-an-electron-Mathematics-appreciated"
+                    target="_blank">Credits</a>
+                <div>
+                    As seen in the diagram, the electron is promoted when a wavelength of light is supplied. Our design
+                    functions thanks to this phenomenon - absorption or absorbance. This is how the energy is absorbed;
+                    electrons are promoted to unstable, excited states, which are higher in energy and are further, on
+                    average, from the nucleus.
+                </div>
+                <div>
+                    The mathematical relationship that can characterize this phenomenon was discovered by Max Planck:
+                </div>
+                <br>
+                <equation>\[E=hv\]</equation>
+                <br>
+                <div>Where E is the energy of the frequency of light, v is the frequency, and h is Planck's constant.
+                    The energy, E, can also represent the difference in energy between orbitals when electrons enter an
+                    excited or ground state.
+                </div>
+                <br>
+                <div>
+                    Therefore, logically, the more ions there are in solution, the substance will absorb the more
+                    likely, light, ultimately decreasing the intensity of light after traversing the sample. This is why
+                    the quantity of light absorbed by a solution is directly proportional to its concentration.
+                </div>
+
+            </div>
+        </section>
+        <br><br>
+        <section id="circuitry">
+            <div class="circuitry">
+                <h1>Circuitry and Electronics</h1>
+                <img src="img/Spectrophotometer_bb_final.jpg">
+                <h2>Lasers and LDRs</h2>
+                <div>
+                    This is a simplified version of the circuitry of our product designed on Fritzing. Note that some of
+                    these components will not be used; for example, the breadboard is just for the visuals. In reality,
+                    the design will be soldered. The two components on the breadboard are the Light Dependent Resistors
+                    (LDRs) which are the sensors in our configuration. The two sensors detect light in different
+                    spectrums because nitrate and phosphate ions have different mean wavelengths in their absorption
+                    spectrum (220 and 420 nm, respectively). The LDR in blue detects UV light, and the smaller LDR
+                    detects visible light. The lasers also emit light of corresponding wavelength: the leftmost emitting
+                    violet light, and the right, producing UV light.
+                </div>
+                <h2>Water Level Sensor</h2>
+                <div>
+                    To conserve the battery life of our product, the laser will not be testing at every instant but only
+                    when there is water. As soon as our water level (in red) sensor reads a value, the laser will start
+                    measuring and will be shot off in intervals of 10 seconds. The laser will only stop after the water
+                    level sensor reads a null value. The data collected by the system will be averaged out, and outliers
+                    (low concentrations) will be discarded.
+                </div>
+                <h2></h2>
+            </div>
+        </section>
+        <br><br>
+
+    </main>
+
+    <div id="end_tag">Template by Jonathan Choi</div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js">
+    </script>
+
+    <script>
+
+        AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <script src="index_script_1.js"></script>
+</body>
+
+</html>

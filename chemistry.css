@@ -1,0 +1,212 @@
+/* fonts */
+
+p {
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+h2 {
+  font-family: "Mulish", sans-serif;
+  text-align: center;
+}
+
+li {
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 97%;
+  margin: 0 auto;
+  background: #8ca3d7;
+  padding: 50px;
+  border-bottom: 6.5px solid #ffffff !important;
+  font-size: 20px;
+}
+
+.picture1 {
+  background-image: url("photos/atmosphere.jpg");
+  background-position-x: 0px;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+a {
+  color: #ec41d6;
+}
+
+a:hover {
+  color: #15ff00;
+}
+
+a:active {
+  color: #000000;
+}
+
+.picture1 > #intro {
+  border-radius: 10px;
+  border: black solid 10px;
+  margin: auto;
+  padding: 20px;
+  min-height: 100px;
+  max-height: 1500px;
+  min-width: 870px;
+  max-width: 870px;
+  background: #ffffff;
+  opacity: 85%;
+}
+
+.picture1 > #intro > h1 {
+  color: #7585dc;
+}
+
+.picture1 > #ozone {
+}
+
+#list {
+  padding: 0px 0px 0px 15px;
+}
+
+#list > ol > li > #indent {
+  padding: 0px 0px 0px 60px;
+}
+
+/* menu */
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  position: relative;
+}
+
+nav ul > li > a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul > li > a:hover {
+  color: #000;
+}
+
+Nav a::before {
+  content: " ";
+  display: block;
+  height: 3px;
+  background-color: #444;
+  position: absolute;
+  top: 10;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+/* slideshow */
+
+.slideshow {
+  width: 550px;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 3px;
+  border: 5px solid #535d63;
+}
+
+.navigation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  background-color: #ffffff;
+  opacity: 30%;
+  border: 2px solid #000000;
+  margin: 23px;
+  cursor: pointer;
+  padding-left: 50px;
+}
+.navigationUI {
+  position: absolute;
+  top: 1180px;
+  bottom: -500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bar:hover {
+  background: #62718f;
+}
+
+input[name="r"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 1.2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .s1 {
+  margin-left: -40%;
+}
+
+#r4:checked ~ .s1 {
+  margin-left: -60%;
+}
+
+#r5:checked ~ .s1 {
+  margin-left: -80%;
+}

@@ -1,0 +1,45 @@
+img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+span {
+  position: relative;
+}
+
+.intro {
+  width: 600px;
+}
+.top_row > div {
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.bottom_row > div {
+  padding: 20px;
+  background-color: rgb(54, 155, 180);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+img {
+  filter: grayscale(100%);
+}
+
+img:hover {
+  filter: grayscale(0%);
+  transition: ease-in-out 0.5s;
+}
+
+body {
+  max-height: 500px;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}

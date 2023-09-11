@@ -1,0 +1,73 @@
+h1 {
+  display: block;
+  margin-top: 20px;
+  margin-right: 100px;
+  text-decoration: overline #303333 5px;
+  color: #0f1b81;
+  font-size: 25px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+img {
+  object-fit: cover;
+  height: 500px;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 7px #5355c7 solid;
+  display: block;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.spectrophotometry {
+  max-width: 990px;
+  background-color: #ececec;
+  padding: 20px;
+  margin-top: 20px;
+  border: black 2.55px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 60px;
+}
+
+.spectrophotometry > img {
+  width: 900px;
+  height: 330px;
+}
+.spectrophotometry > div {
+  max-width: 700px;
+  min-width: 100px;
+}
+
+.orbitals_quanta {
+  max-width: 990px;
+  background-color: #ececec;
+  padding: 20px;
+  margin-top: 20px;
+  border: black 2.55px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 60px;
+}
+
+.orbitals_quanta > div {
+  max-width: 700px;
+  min-width: 100px;
+}
+
+.circuitry {
+  max-width: 990px;
+  background-color: #ececec;
+  padding: 20px;
+  margin-top: 20px;
+  border: black 2.55px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 60px;
+}
+
+.circuitry > div {
+  max-width: 700px;
+  min-width: 100px;
+}

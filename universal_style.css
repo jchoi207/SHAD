@@ -1,0 +1,117 @@
+.MathJax {
+  font-size: 2em;
+}
+
+body {
+  margin: 0px;
+  font-family: "Nunito", sans-serif;
+  height: 200vh;
+  font-size: 14px;
+  text-align: justify;
+  margin-right: 0;
+  margin-left: 0;
+  min-width: 900px;
+}
+* {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#end_tag {
+  margin: auto 100px;
+}
+
+a {
+  color: #666666;
+}
+
+a:hover {
+  color: #000000;
+}
+
+a:active {
+  color: #ffffff;
+}
+/* Top Navigation Bar */
+.menu_alpha {
+  width: 100%;
+  min-width: 900px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: #292929;
+  overflow: hidden;
+
+  -webkit-transition: background-color 1s;
+}
+.menu_alpha > nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  list-style-type: none;
+}
+.menu_alpha:hover {
+  transition: all ease-in-out 1s;
+  background-color: #ffffff;
+  color: #444;
+}
+.menu_alpha:hover a {
+  transition: all ease-in-out 1s;
+  color: #000000;
+}
+
+.menu_alpha > nav > ul > a > li:hover {
+  transition: all ease-in-out 1s;
+  text-decoration: underline;
+  color: #666666;
+}
+.menu_alpha > nav > ul > a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* Bottom Navigation Bar */
+.menu_beta {
+  min-width: 900px;
+  height: 130px;
+  margin-bottom: 8px;
+  position: sticky; /* fixed position = relative to this position */
+  top: 0px;
+  background: #c0c0c0;
+  padding: 50px 0px;
+  box-sizing: border-box;
+  z-index: 99; /* cool slideshow effect */
+  transition: 1s;
+  text-align: center;
+  vertical-align: baseline;
+  line-height: 4px;
+  overflow: hidden;
+  opacity: 90%;
+}
+.menu_beta > nav {
+  font-size: 20px;
+}
+.menu_beta > nav ul li {
+  display: inline-block;
+  margin: 2px 30px;
+}
+.menu_beta > nav ul li a {
+  color: #fff;
+  transition: 0.4s ease;
+  vertical-align: center;
+  text-decoration: none;
+}
+.menu_beta > nav ul li a:hover {
+  transition: all ease-in-out 0.3s;
+  color: #444;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #292929, #264157);
+}

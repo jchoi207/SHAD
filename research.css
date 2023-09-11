@@ -1,0 +1,36 @@
+main {
+  margin-top: 30px;
+  padding: 50px;
+  background-color: #eeeeee;
+  width: 850px;
+  margin-right: auto;
+  margin-left: auto;
+  border: #4ea1c2 solid 10px;
+}
+
+h1 {
+  text-decoration: underline;
+  color: #000000;
+}
+
+div {
+  width: 700px;
+}
+
+main > h3 {
+  text-align: start;
+  color: #00303d;
+  font-size: 20px;
+}
+
+main > h3:nth-child(odd) {
+  text-align: end !important;
+}
+
+h3:hover {
+  text-decoration: overline 5px #adc4e6;
+  transition: ease-in-out 1s;
+}
+
+main > div:nth-child(even) {
+}
