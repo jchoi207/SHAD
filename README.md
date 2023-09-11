@@ -1,2 +1,2 @@
 # SHAD
-# https://aquadux.netlify.app/
+# This website was created to showcase my SHAD group's solution
